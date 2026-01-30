@@ -12,7 +12,16 @@ void reverse(int *arr, int n)
    {
     swap(arr[i],arr[n-i-1]);
    }
+   
 }
+void sub_reverse(int *arr, int i, int j) // to reverse a sub array , it can also reverse an array
+   {
+      while(j-i>0)
+      {
+        swap(arr[i],arr[j]);
+        i++,j--;
+      }
+   }
 int main()
 {
     int arr[15];
@@ -26,4 +35,12 @@ int main()
     cout<<"\n Reversed array is : \n";
     for(int i=0; i<n; i++)
     {cout<<arr[i]<<" ";}
+    cout<<"\ngive two indexes to reverse a sub array : ";
+    int i,j;
+    cin>>i>>j;
+    sub_reverse(arr,i,j);
+    cout<<"\nupdated array is : \n";
+    for(int i=0; i<n; i++)
+    {cout<<arr[i]<<" ";}
+
 }
