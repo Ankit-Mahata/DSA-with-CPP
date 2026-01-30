@@ -39,7 +39,7 @@ int main()
     int i,j;
     cin>>i>>j;
     sub_reverse(arr,i,j);
-    cout<<"\nupdated array is : \n";
+    cout<<"\nupdated array is :  \n";
     for(int i=0; i<n; i++)
     {cout<<arr[i]<<" ";}
 
