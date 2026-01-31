@@ -1,4 +1,5 @@
 // to remove a specific character from string
+// eg. if input = ankit , and chr=k then output is "anit"
 #include<iostream>
 #include<cstring>
 using namespace std;
